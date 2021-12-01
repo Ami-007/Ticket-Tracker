@@ -1,15 +1,21 @@
 
 import "./App.scss";
-import "./components/Counter/Counter";
-import "./components/InfoBox/InfoBox";
+import Counter from "./components/Counter/Counter";
+import InfoBox from "./components/InfoBox/InfoBox";
+import team from "./data/team";
 
 
 const App = () => {
+
   return (
     <div className="app">
       <header className="greeting">
-        <h1 className="greeting__heading">Hello World</h1>
+        <h1 className="greeting__heading">Ticket Tracker</h1>
       </header>
+      <section className="tickets">
+        <InfoBox employeeArr={team}/>
+
+      </section>
     </div>
   );
 };
