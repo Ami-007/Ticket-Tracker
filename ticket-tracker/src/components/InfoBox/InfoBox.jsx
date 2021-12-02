@@ -1,5 +1,6 @@
 import React from "react";
 import "./InfoBox.scss";
+import Counter from "../Counter/Counter";
 
 
 const InfoBox = (props) => {
@@ -7,14 +8,22 @@ const InfoBox = (props) => {
     const {title, employeeArr} = props;
     const employeeCard = employeeArr.map((team, index) => {
         return (
-        <>
-           <p key ={title + index} className="employeeInfo">Name:{team.name} Role:{team.role}</p>
-        </>
+        <div key ={title + index} className="employeeInfo">
+           <p>
+                Name: {team.name}
+            </p>
+            <p>
+                Role: {team.role}
+            </p>
+            <Counter/>
+        </div>
     )
     })
 
     return (
-        <div className="container">{employeeCard}</div>
+        <div className="container">
+            {employeeCard}
+        </div>
     )
 };
 
