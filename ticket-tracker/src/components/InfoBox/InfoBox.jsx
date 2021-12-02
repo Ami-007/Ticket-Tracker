@@ -9,12 +9,12 @@ const InfoBox = (props) => {
     const employeeCard = employeeArr.map((team, index) => {
         return (
         <div key ={title + index} className="employeeInfo">
-           <p>
-                Name: {team.name}
-            </p>
-            <p>
-                Role: {team.role}
-            </p>
+           <h4>
+               {team.name}
+            </h4>
+            <h4>
+                {team.role}
+            </h4>
             <Counter/>
         </div>
     )
