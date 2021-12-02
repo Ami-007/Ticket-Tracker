@@ -1,0 +1,17 @@
+.counterBox {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgb(37,38,40);
+    text-align: center;
+}
+.counter {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+
+    &__button {
+        border-radius: 50px;
+        background-color: rgb(118, 140, 184);
+        padding: 15px;
+    }
+}
