@@ -1,6 +1,5 @@
 
 import "./App.scss";
-import Counter from "./components/Counter/Counter";
 import InfoBox from "./components/InfoBox/InfoBox";
 import team from "./data/team";
 
